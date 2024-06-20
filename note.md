@@ -1,3 +1,5 @@
+* https://github.com/kaieye/2022-Machine-Learning-Specialization
+
 * Machine learning algorithms:
 
   * supervised learning
@@ -109,18 +111,18 @@ univariate linear regression
 ###  Implement Gradient Descent
 
 * Gradient descent algorithm:
-  
+
   each step:
   $$
   w=w-\alpha\partialderivative{J(w,b)}{w}
   $$
-  
+
   $$
   b=b-\alpha\partialderivative{J(w,b)}{b}
   $$
+
   
-  
-  
+
   * alpha: the learning rate, a small positive number between 0 and 1.
     * alpha controls how big of a step you take downhill. 
     * if alpha is very large, then that corresponds to a very aggressive gradient descent procedure where you're trying to take huge steps downhill.
@@ -128,6 +130,26 @@ univariate linear regression
     * in combination with the learning rate alpha, it also determines the size of the steps you want to take downhill.
   * repeat until convergence:
     * convergence: you reach the point at a local minimum where the parameters w and b no longer change much with each additional step that you take.
-    *  simultaneously update w and b
-    * 
+    * simultaneously update w and b
+
+* tangent line, slope
+
+### Learning Rate
+
+* if alpha is too small:
+  * gradient descent will work, but it will be slow.
+* if alpha is too large:
+  * gradient descent may overshoot, never reach the minimum.
+  * Fail to converge, diverge
+* as we approach the local minimum, the derivative automatically gets smaller, the update steps also automatically get smaller, even the learning rate Alpha is kept at some fixed value.
+
+
+
+$$
+\partialderivative{J(w,b)}{w}=\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})x^{(i)}
+$$
+
+$$
+\partialderivative{J(w,b)}{b}=\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})
+$$
 
