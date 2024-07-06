@@ -17,7 +17,7 @@
 
 * example: Housing price prediction - regression
 
-### Linear Regression with One Variable
+## Linear Regression with One Variable
 
 univariate linear regression
 
@@ -153,3 +153,5 @@ $$
 \partialderivative{J(w,b)}{b}=\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})
 $$
 
+* the cost function of linear gradient is a **convex function**, a bow-shaped function and it cannot have any local minimum other than the single global minimum.
+* "Batch" gradient descent: Each step of gradient descent uses all the training examples.
