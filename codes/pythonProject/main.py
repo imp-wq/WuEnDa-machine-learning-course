@@ -4,12 +4,18 @@ if __name__ == "__main__":
     data = np.random.rand(3, 4)
     print(f'data:\t{data}')
     print(f'[::]\t{data[::]}')
-    print(f'[:,:2]:\t{data[:,:2]}')
+    print(f'[:,:2]:\t{data[:, :2]}')
     # the second column
     print(f'[:,2]:\t{data[:, 2]}')
     print(f'[:2]:\t{data[:2]}')
 
     print(f'[2,:]:\t{data[2, :]}')
+
+    print(np.c_[np.array([[1, 2, 3]]), 0, 0, np.array([[4, 5, 6]])])
+    a = np.array([1, 2, 3])
+    print(a ** 2)
+    b = np.array([1, 2, 3])
+    print(a@b)
 
     # test 1-D
     # a = np.array([1, 2, 3, 4])

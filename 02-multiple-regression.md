@@ -84,3 +84,10 @@ $$
 * Try a range of values, until I found the value that's too small, and then also make sure I found a value that is too large. And I'll slowly try to pick the largest possible learning rate or something slightly smaller than the largest reasonable value that I found.
 
 ![](.\images\choosing-the-learning-rate.jpg)
+
+## Feature Engineering
+
+* Using intuition to design new features, usually by combining or transforming the original features of the problem, in order to make it easier for learning algorithm to make accurate predictions.
+
+## Polynomial Regression
+
